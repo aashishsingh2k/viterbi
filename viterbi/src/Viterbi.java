@@ -68,14 +68,14 @@ public     Viterbi    (double[] pi, double[][] A, double[][] B ){
 	this.pi = pi;
 	this.A = A;
 	this.B = B;
-}  //(5   points)
+}  
 //   each   of   the   following   methods   takes   in   a   boolean   variable   named   underflow 
 //   if   underflow   ==   true,   your   method   should   be   adjusted   so   that   it   deals   with 
 //   underflow   (use   logs   appropriately   as   suggested   in   the   notes),   otherwise   your 
 //   method   should   not   deal   with   underflow
 
 
-//   computes   and   prints   the   probability   of   a   particular   sequence   of   occurring (4   points)
+//   computes   and   prints   the   probability   of   a   particular   sequence   of   occurring 
 public   double     probOfSeq (int[] omega , List<Integer> seq, boolean underflow ) {
 	if(seq == null) {
 		throw new IllegalArgumentException("seq is null!"); 
@@ -110,7 +110,7 @@ public   double     probOfSeq (int[] omega , List<Integer> seq, boolean underflo
 }
 
 //   computes   and   prints   the   sequence   with   the   
-//highest   probability   of   occurring (10   points)
+//highest   probability   of   occurring 
 public   List<Integer>     bestSeq (int[] omega, boolean underflow ){
 	if(omega == null) {
 		throw new IllegalArgumentException("omega is null!"); 
@@ -220,7 +220,7 @@ public   List<Integer>     bestSeq (int[] omega, boolean underflow ){
 	return Arrays.asList(finalArray);
 }
 
-//   computes   and   prints   the   sequence   with   the   lowest   probability   of   occurring (10   points)
+//   computes   and   prints   the   sequence   with   the   lowest   probability   of   occurring 
 public   List<Integer>     worstSeq (int[] omega, boolean underflow ){
 	if(omega == null) {
 		throw new IllegalArgumentException("omega is null!"); 
@@ -373,7 +373,6 @@ private class myComparator implements Comparator<Double> {
 //corresponding   to   the   indices   in   predl,   and
 //the   sequence   with   the   highest
 //probability   corresponding   to   the   indices   in   predr.  
-//(   12   points)
 public   List<List<Integer>>    bestSeqSet (int[] omega, boolean underflow ){
 	
 	if(omega == null) {
@@ -476,7 +475,7 @@ public   List<List<Integer>>    bestSeqSet (int[] omega, boolean underflow ){
 }
 
 
-//   computes   and   prints   the   highest   probability   found   at   time   T. (5   points)
+//   computes   and   prints   the   highest   probability   found   at   time   T. 
 public   double     maxScore (int[] omega, boolean underflow ){
 	if(omega == null) {
 		throw new IllegalArgumentException("omega is null!"); 
@@ -490,7 +489,7 @@ public   double     maxScore (int[] omega, boolean underflow ){
 	return finalpr;
 }
 
-//   computes   and   prints   the   k   distinct   highest   probabilities   found   at   time   T (4   points)
+//   computes   and   prints   the   k   distinct   highest   probabilities   found   at   time   T 
 public   double[]     maxScoreSet (int[] omega, int k, boolean underflow ){
 	if(omega == null) {
 		throw new IllegalArgumentException("omega is null!"); 
